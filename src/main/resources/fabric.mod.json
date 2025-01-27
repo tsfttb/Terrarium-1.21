@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "terrarium",
+	"version": "${version}",
+	"name": "Terrarium",
+	"description": "This mod bring Terraria to Minecraft",
+	"authors": [
+		"tsfttb"
+	],
+	"contact": {
+		"homepage": "https://tsfttb.net/",
+		"sources": "https://github.com/tsfttb/Terrarium"
+	},
+	"license": "MIT",
+	"icon": "assets/terrarium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tsfttb.terrarium.Terrarium"
+		],
+		"fabric-datagen": [
+			"net.tsfttb.terrarium.TerrariumDataGenerator"
+		],
+		"client": [
+			"net.tsfttb.terrarium.TerrariumClient"
+		]
+	},
+	"mixins": [
+		"terrarium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
