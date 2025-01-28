@@ -4,6 +4,7 @@ package net.tsfttb.terrarium.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -20,6 +21,15 @@ public class ModBlocks {
                     .strength(4F)
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)
+                    .mapColor(MapColor.STONE_GRAY)
+            ));
+
+    public static final Block TITANIUM_BLOCK = registerBlock("titanium_block",
+            new Block(AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.METAL)
+                    .strength(5F, 6F)
+                    .requiresTool()
+                    .mapColor(MapColor.IRON_GRAY)
             ));
 
 
@@ -37,6 +47,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.TITANIUM_ORE);
+            entries.add(ModBlocks.TITANIUM_BLOCK);
         });
     }
 }

@@ -27,6 +27,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.terrarium.terrarium_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.TITANIUM_ORE);
+                        entries.add(ModBlocks.TITANIUM_BLOCK);
 
                     }).build());
 
