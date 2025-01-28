@@ -15,7 +15,7 @@ import net.tsfttb.terrarium.Terrarium;
 
 public class ModBlocks {
 
-    public static final Block TITANIUM_ORE_BLOCK = registerBlock("titanium_ore_block",
+    public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
             new Block(AbstractBlock.Settings.create()
                     .strength(4F)
                     .requiresTool()
@@ -36,7 +36,7 @@ public class ModBlocks {
         Terrarium.LOGGER.info("Registering Mod Blocks for" + Terrarium.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.TITANIUM_ORE_BLOCK);
+            entries.add(ModBlocks.TITANIUM_ORE);
         });
     }
 }
