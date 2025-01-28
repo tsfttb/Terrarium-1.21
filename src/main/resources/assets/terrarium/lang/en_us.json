@@ -2,5 +2,7 @@
   "item.terrarium.titanium_ore": "Titanium Ore",
   "item.terrarium.titanium_bar": "Titanium Bar",
   "item.terrarium.iron_bar": "Iron Bar",
-  "item.terrarium.copper_bar": "Copper Bar"
+  "item.terrarium.copper_bar": "Copper Bar",
+
+  "block.terrarium.titanium_ore_block": "Titanium Ore Block"
 }
