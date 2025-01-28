@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 import net.tsfttb.terrarium.Terrarium;
 
 public class ModItems {
-    public static final Item TITANIUM_ORE = registerItem("titanium_ore", new Item(new Item.Settings()));
+    public static final Item RAW_TITANIUM = registerItem("raw_titanium", new Item(new Item.Settings()));
     public static final Item TITANIUM_BAR = registerItem("titanium_bar", new Item(new Item.Settings()));
     public static final Item IRON_BAR = registerItem("iron_bar", new Item(new Item.Settings()));
     public static final Item COPPER_BAR = registerItem("copper_bar", new Item(new Item.Settings()));
@@ -22,7 +22,7 @@ public class ModItems {
         Terrarium.LOGGER.info("Registering Mod Items for" + Terrarium.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(TITANIUM_ORE);
+            entries.add(RAW_TITANIUM);
             entries.add(TITANIUM_BAR);
             entries.add(IRON_BAR);
             entries.add(COPPER_BAR);
