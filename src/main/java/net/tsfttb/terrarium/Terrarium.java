@@ -3,6 +3,7 @@ package net.tsfttb.terrarium;
 import net.fabricmc.api.ModInitializer;
 
 import net.tsfttb.terrarium.block.ModBlocks;
+import net.tsfttb.terrarium.item.ModItemGroups;
 import net.tsfttb.terrarium.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,7 @@ public class Terrarium implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registeredModItems();
 		ModBlocks.registerModBlocks();
 	}
