@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "titanium_bar",
+  "ingredient": {
+    "item": "terrarium:raw_titanium"
+  },
+  "result": {
+    "id": "terrarium:titanium_bar"
+  }
+}
