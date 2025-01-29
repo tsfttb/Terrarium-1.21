@@ -4,6 +4,7 @@ package net.tsfttb.terrarium.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -12,17 +13,18 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.tsfttb.terrarium.Terrarium;
 
 public class ModBlocks {
 
     public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(4F)
+            new ExperienceDroppingBlock(UniformIntProvider.create(3,7),(AbstractBlock.Settings.create()
+                    .strength(3.0F,3.0F)
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)
                     .mapColor(MapColor.STONE_GRAY)
-            ));
+            )));
 
     public static final Block TITANIUM_BLOCK = registerBlock("titanium_block",
             new Block(AbstractBlock.Settings.create()
